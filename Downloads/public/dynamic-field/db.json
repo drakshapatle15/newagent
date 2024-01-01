@@ -1,0 +1,10 @@
+{
+  "form": {
+    "name": "ExampleField",
+    "type": "Text",
+    "fieldValue": "Example Value",
+    "mandatory": "true",
+    "options": [{ "text": "Option 2" }, { "text": "Option 3" }],
+    "errorHelperText": "This field is required."
+  }
+}

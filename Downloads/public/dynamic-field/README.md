@@ -1,0 +1,5 @@
+--input-color: #323232;
+--border-radius: 10px;
+--paddingX: 10px;
+--paddingY: 10px;
+--input-background: #feffef;

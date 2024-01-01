@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "323d0fde-d1ba-4e91-b6e2-73bf9b522f3a",
+		"name": "Agent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21035413",
+		"_collection_link": "https://orange-moon-301673.postman.co/workspace/Team-Workspace~f6877d88-c17b-485e-8552-e2f89e9bdf2e/collection/21035413-323d0fde-d1ba-4e91-b6e2-73bf9b522f3a?action=share&source=collection_link&creator=21035413"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page_number\" : \"1\",\r\n    \"records_per_page\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}user/list",
+							"host": [
+								"{{AgentUrl}}user"
+							],
+							"path": [
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{AgentUrl}}user/detail/1",
+							"host": [
+								"{{AgentUrl}}user"
+							],
+							"path": [
+								"detail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{AgentUrl}}user/delete/1",
+							"host": [
+								"{{AgentUrl}}user"
+							],
+							"path": [
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role_id\": \"1\",\r\n    \"first_name\": \"Amisha\",\r\n    \"last_name\": \"Prajapati\",\r\n    \"email\": \"amishapra123@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"address1\": \"B-502\",\r\n    \"address2\": \"Radhe Sagar\",\r\n    \"city\": \"Sanand\",\r\n    \"state\": \"Gujarat\",\r\n    \"country\": \"India\",\r\n    \"zipcode\": \"380013\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}user/create",
+							"host": [
+								"{{AgentUrl}}user"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role_id\": \"1\",\r\n    \"first_name\": \"Amisha\",\r\n    \"last_name\": \"Prajapati\",\r\n    \"email\": \"amishapra12@gmail.com\",\r\n    \"password\": \"password\",\r\n    \"address1\": \"B-502\",\r\n    \"address2\": \"Radhe Sagar\",\r\n    \"city\": \"Sanand\",\r\n    \"state\": \"Gujarat\",\r\n    \"country\": \"India\",\r\n    \"zipcode\": \"380013\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}user/update/1",
+							"host": [
+								"{{AgentUrl}}user"
+							],
+							"path": [
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agent",
+			"item": [
+				{
+					"name": "Agent Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"agent_name\" : \"test\",\r\n    \"agent_description\" : \"test\",\r\n    \"agent_type\"  :\"1\",\r\n    \"agent_category\": \"1\",\r\n    \"agent_authentication_required\": \"1\",\r\n    \"agent_monthly_billing\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}agent/update/6",
+							"host": [
+								"{{AgentUrl}}agent"
+							],
+							"path": [
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agent List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page_number\" : \"1\",\r\n    \"records_per_page\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}agent/list",
+							"host": [
+								"{{AgentUrl}}agent"
+							],
+							"path": [
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agent Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{AgentUrl}}agent/delete/6",
+							"host": [
+								"{{AgentUrl}}agent"
+							],
+							"path": [
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agent Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{AgentUrl}}agent/detail/5",
+							"host": [
+								"{{AgentUrl}}agent"
+							],
+							"path": [
+								"detail",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agent  Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"agent_name\" : \"test\",\r\n    \"agent_description\" : \"test\",\r\n    \"agent_type\"  :\"1\",\r\n    \"agent_category\": \"1\",\r\n    \"agent_authentication_required\": \"1\",\r\n    \"agent_monthly_billing\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}agent/create",
+							"host": [
+								"{{AgentUrl}}agent"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"amisha@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}auth/forgot-password",
+							"host": [
+								"{{AgentUrl}}auth"
+							],
+							"path": [
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOjEsImlhdCI6MTcwMzY1ODIyNiwiZXhwIjoxNzAzNjg3MDI2fQ.HoxVZjKZEaV8HlmEn7YGa2b55aTuAaVjDBZaBkPkIGY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"amishapra12@gmail.com\",\r\n    \"password\" : \"password\",\r\n    \"device_token\" : \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}auth/login",
+							"host": [
+								"{{AgentUrl}}auth"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"amisha@gmail.com\",\r\n    \"token\" : \"FZV2Z7zfdAIttFp2QUW2h8iFEaaxvUxkv8hig3u7qUDNtg1Rz01BUHTXlbUS\", \r\n    \"password\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}auth/reset-password",
+							"host": [
+								"{{AgentUrl}}auth"
+							],
+							"path": [
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token Verify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"qfSsVh51eaEdguLrxQ9E6Dn5Ig1Kigr7X1lKZ9rrevCgFK9h2MW6dE70LEgI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}auth/token-verify",
+							"host": [
+								"{{AgentUrl}}auth"
+							],
+							"path": [
+								"token-verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"Admin\",\r\n    \"last_name\" : \"Super\",\r\n    \"email\" : \"admin@admin.com\",\r\n    \"password\" : \"password\",\r\n    \"role_id\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AgentUrl}}auth/register",
+							"host": [
+								"{{AgentUrl}}auth"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{AgentToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
