@@ -1,0 +1,20 @@
+.create-agent-form-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 2; /* Adjust the ratio according to your layout */
+  padding: 20px;
+}
+
+.default-form-message {
+  background-color: #f0f0f0;
+  margin-top: 50px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
