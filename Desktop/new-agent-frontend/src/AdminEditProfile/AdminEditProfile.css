@@ -1,0 +1,12 @@
+/* AdminEditProfile.css */
+
+/* Remove blue background color on hover */
+.form-control:focus,
+.form-control:active {
+  box-shadow: none;
+}
+
+/* Set white background color for the placeholder */
+::placeholder {
+  color: #ffffff; /* White color */
+}

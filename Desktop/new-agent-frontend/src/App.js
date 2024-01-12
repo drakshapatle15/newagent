@@ -661,6 +661,8 @@ import EditProfile from "./pages/EditProfile/EditProfile";
 import Login from "./pages/Login/Login";
 import PhoneVerification from "./pages/PhoneVerification/PhoneVerification";
 import AdminLogin from "./pages/AdminLogin/Adminlogin";
+import AdminDashboard from "./AdminDashboard/AdminDashboard";
+import AdminEditProfile from "./AdminEditProfile/AdminEditProfile";
 
 const App = () => {
   return (
@@ -673,6 +675,8 @@ const App = () => {
         <Route path="/edit-profile" component={EditProfile} />
         <Route path="/account-create" component={AccountCreationPage} />
         <Route exact path="/" component={Dashboard} />
+        <Route path="/admin-dashboard" component={AdminDashboard} />
+        <Route path="/admin-editprofile" component={AdminEditProfile} />
       </Switch>
     </Router>
   );

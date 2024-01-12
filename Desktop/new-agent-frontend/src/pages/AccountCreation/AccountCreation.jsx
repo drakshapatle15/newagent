@@ -5,7 +5,7 @@ import "react-phone-input-2/lib/style.css";
 import { useHistory } from "react-router-dom"; // Import useHistory
 import { ToastContainer, toast } from "react-toastify";
 
-import "react-toastify/dist/ReactToastify.css";
+// import "react-toastify/dist/ReactToastify.css";
 
 const InputWithLabel = ({
   label,
